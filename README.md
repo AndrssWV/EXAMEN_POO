@@ -49,3 +49,6 @@ La aplicación permite gestionar proveedores, productos y solicitudes de compra.
 ```
 ## Repositorio
 Enlace -> https://github.com/AndrssWV/EXAMEN_POO.git
+
+## Diagrama UML 
+![alt text](diagrama.jpg)

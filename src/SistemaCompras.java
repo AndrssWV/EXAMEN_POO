@@ -101,8 +101,18 @@ public class SistemaCompras {
                 }
             } else System.out.println("El Nombre no puede estar vacío.");
         }
-        System.out.print("Precio unitario: ");
-        double precio = sc.nextDouble(); sc.nextLine();
+        System.out.print("Precio unitario (si incluye decimales utlizar ,): ");
+        double precio = 0;
+        while (true) {
+            try {
+                precio = sc.nextDouble(); sc.nextLine();
+                break;
+            } catch (InputMismatchException e) {
+                System.out.println("¡ERROR! Debe ingresar los decimales utilizando ,");
+                return;
+                
+            }
+        }
         productos.add(new Producto(nombre, precio));
         System.out.println("Producto registrado.");
     }
